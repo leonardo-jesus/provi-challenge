@@ -1,5 +1,5 @@
 import React from 'react';
 
-const PageHeader = "";
+const PageHeader;
 
-export default PageHeader
+export default PageHeader;
