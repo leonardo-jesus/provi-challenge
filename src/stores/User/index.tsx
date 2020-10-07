@@ -18,4 +18,3 @@ export const UserProvider: React.FC<MyProps> = ({ children }) => {
 
   return <UserContext.Provider value={{ username, changeNameByAPI }}>{children}</UserContext.Provider>;
 };
-
