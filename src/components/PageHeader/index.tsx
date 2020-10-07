@@ -1,5 +1,10 @@
 import React from 'react';
 
-const PageHeader;
-
-export default PageHeader;
+export const PageHeader = () => {
+  return (
+    <div>
+      <div>Hello</div><br />
+      <h1>World!</h1>
+    </div>
+  );
+};
