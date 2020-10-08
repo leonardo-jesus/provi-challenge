@@ -7,6 +7,7 @@ export const ImgCustom = styled.img.attrs({
 })`
   width: 150px;
   height: auto;
+  margin-right: -8px;
 `;
 
 export const AppBarCustom = styled(AppBar)`
@@ -20,9 +21,11 @@ export const AppBarCustom = styled(AppBar)`
 export const useStyles = makeStyles((theme) => ({
   appBar: {
     boxShadow: "none",
+    marginTop: 5,
+    marginBottom: 5,
   },
   divider: {
-    marginTop: "10px",
+    marginTop: "18px",
     marginRight: 20,
     height: "45px",
   },
@@ -33,12 +36,22 @@ export const useStyles = makeStyles((theme) => ({
   },
   logout: {
     width: "100px",
-    marginTop: -15,
+    margin: 0,
   },
-  notificationsIcon: {
-    marginTop: 7,
+  iconDivRight: {
+    width: "15%",
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    marginRight: -12,
   },
-  iconDiv: {
-    marginLeft: 500,
+  iconDivLeft: {
+    width: "1350px",
+    margin: 0,
+    marginLeft: -50,
+    display: "flex",
+    justifyContent: "flex-start",
+    justifySelf: "flex-start",
+    alignItems: "center",
   }
 }));
