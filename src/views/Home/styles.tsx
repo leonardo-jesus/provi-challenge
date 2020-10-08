@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { Grid, Card } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 export const Background = styled.div`
-  position: absolute;
   height: 200px;
   width: 100%;
   top: 0;
-  background: #99d7f2;
+  background: #1449a5;
 `;
 
 export const CustomizedGrid = styled(Grid)`
@@ -14,7 +13,9 @@ export const CustomizedGrid = styled(Grid)`
   zIndex: 999;
 `;
 
-export const CustomizedCard = styled(Card)`
+export const CustomizedCard = styled.div`
+  background: #f5f5f5;
   display: flex;
   height: calc(100vh - 100px);
+  border-radius: 2px;
 `;
