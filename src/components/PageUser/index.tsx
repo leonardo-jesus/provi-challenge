@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box} from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import { useStyles } from './styles';
 import { PageUserAvatar } from '../PageUserAvatar';
+import { PageUserIcons } from '../PageUserIcons';
 
 export const PageUser = () => {
   const classes = useStyles();
@@ -9,6 +10,7 @@ export const PageUser = () => {
   return (
     <Box className={classes.box}>
       <PageUserAvatar />
+      <PageUserIcons />
     </Box>
   );
 };
