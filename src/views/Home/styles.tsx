@@ -16,6 +16,8 @@ export const CustomizedGrid = styled(Grid)`
 export const CustomizedCard = styled.div`
   background: #f5f5f5;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: calc(100vh - 100px);
   border-radius: 2px;
 `;
