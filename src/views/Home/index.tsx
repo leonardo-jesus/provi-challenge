@@ -1,18 +1,33 @@
 import React from 'react';
-// import { PageHeader } from '../../components'
+import { PageHeader, PageUser } from '../../components'
 import { Background, CustomizedGrid, CustomizedCard } from './styles';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core';
 
 export const Home = () => {
+  const theme =  createMuiTheme({
+    palette: {
+      primary: {
+        main: '#1496ef',
+      },
+      secondary: {
+        main: '#f5f5f5',
+      }
+    }
+  });
+
   return (
-    <Background>
-      <CustomizedGrid>
+    <ThemeProvider theme={theme}>
+      <Background>
         <CustomizedGrid>
-          <CustomizedCard>
-            {/* <PageHeader /> */}
-          </CustomizedCard>
+          <CustomizedGrid>
+            <CustomizedCard>
+              <PageHeader />
+              <PageUser />
+            </CustomizedCard>
+          </CustomizedGrid>
         </CustomizedGrid>
-      </CustomizedGrid>
-    </Background>
+      </Background>
+    </ThemeProvider>
   );
 }
 
