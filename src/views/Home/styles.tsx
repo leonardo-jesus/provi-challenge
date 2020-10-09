@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Grid } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
+
 
 export const Background = styled.div`
   height: 200px;
@@ -29,3 +30,23 @@ export const LoadingWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `; 
+
+export const useStyles = makeStyles((theme) => ({
+  box: {
+    width: "99%",
+    height: "99%",
+    // display: "flex",
+    // flexDirection: "column",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    gridAutoRows: "1fr 2fr",
+  },
+    boxUser: {
+      width: "99%",
+      height: "185px",
+      background: "#1496ef",
+      marginTop: "0",
+      borderTop: "2px solid #80bfda",
+      display: "flex",
+    },
+}))
