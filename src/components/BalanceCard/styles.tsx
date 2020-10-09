@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     borderRadius: 0,
     padding: "20px",
-    gridArea: "2 / 1 / 2 / 1"
+    gridArea: "1 / 1 / 2 / 1"
   },
   title: {
     marginTop: "-20px",
