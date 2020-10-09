@@ -34,21 +34,6 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "-5px",
     color: "#E74C3C",
   },
-  moneyBalance: {
-    fontSize: "16px",
-  },
-  img: {
-    transform: "scale(0.9)",
-    marginTop: "-16px",
-    marginRight: "-45px",
-  },
-  titleDiv: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  span: {
-    color: "#E74C3C"
-  },
   listItem: {
     width: "45vw",
     height: "200px",
