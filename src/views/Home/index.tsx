@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { PageHeader, BalanceCard, TaxesCard, PageUserAvatar, PageUserIcons } from '../../components'
+import { PageHeader, BalanceCard, TaxesCard, PageUserAvatar, PageUserIcons, InstallmentsCard } from '../../components'
 import { Background, CustomizedGrid, CustomizedCard, LoadingWrapper, useStyles } from './styles';
 import { ThemeProvider, createMuiTheme, CircularProgress, Box } from '@material-ui/core';
 import { UserContext } from '../../stores';
@@ -40,8 +40,9 @@ export const Home = () => {
                 <PageUserIcons />
               </Box>
               <Box className={classes.box}>
-                <BalanceCard title="Provi Balance" balance={userData.amountTaken} status="Available" actionTitle1="Add Money" actionTitle2="Withdraw Money" />
-                <TaxesCard amountPaid={userData.amountPayd} monthlyInterest={userData.monthlyInterest} totalAmmount={userData.totalAmountInTaxes} />
+                <BalanceCard title="Provi Balance" balance="{userData.amountTaken}" status="Available" actionTitle1="Add Money" actionTitle2="Withdraw Money" />
+                <TaxesCard amountPaid="{userData.amountPayd}" monthlyInterest="{userData.monthlyInterest}" totalAmmount="{userData.totalAmountInTaxes}" />
+                <InstallmentsCard />
               </Box>
             </CustomizedCard>
           </CustomizedGrid>
