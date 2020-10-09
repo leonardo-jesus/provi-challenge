@@ -46,9 +46,6 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
-  span: {
-    color: "#E74C3C"
-  },
   button1: {
     color: "#2ECC71",
   },
