@@ -25,7 +25,7 @@ export const TaxesCard: FC<Props> = ({ amountPaid, monthlyInterest, totalAmmount
         <Typography variant="subtitle1" className={classes.moneyBalance}>
           Amount Paid - {amountPaid}<br />
           Monthly Interest - {monthlyInterest}<br/>
-          Total Amount in Taxes - <span className={classes.span}>{totalAmmount}</span>
+          Total Amount in Taxes - <span className={classes.span}>R$ {totalAmmount}.00</span>
         </Typography>
       </CardContent>
       <CardActions>
