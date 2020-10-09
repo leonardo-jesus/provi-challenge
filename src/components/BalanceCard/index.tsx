@@ -25,7 +25,7 @@ export const BalanceCard:FC<Props> = ({ title, balance, status, actionTitle1, ac
         </div>
         <Divider orientation="horizontal" className={classes.dividerHor} flexItem />
         <Typography variant="h6" className={classes.moneyBalance}>
-          {balance}
+          R$ {balance}.00 BRL
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {status}
