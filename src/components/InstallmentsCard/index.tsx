@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardActions, CardContent, Button, Typography, List, ListSubheader, ListItem, ListItemText  } from '@material-ui/core';
+import { Card, CardActions, CardContent, Button, Typography, List, ListSubheader, ListItem, ListItemText, Divider } from '@material-ui/core';
 import { useStyles } from './styles';
 
 export const InstallmentsCard = () => {
@@ -13,8 +13,15 @@ export const InstallmentsCard = () => {
             <li key={`section-${sectionId}`} className={classes.listSection}>
               <ul className={classes.ul}>
                 {[0, 1, 2].map((item) => (
-                  <ListItem key={`item-${sectionId}-${item}`}>
-                    <ListItemText primary={`Item ${item}`} />
+                  <ListItem className={classes.listItem} key={`item-${sectionId}-${item}`}>
+                    {/* <ListItemText primary={`Item ${item}`} /> */}
+                    <ListItemText primary={`Value: `} />
+                    <ListItemText primary={`Payd: `} />
+                    <ListItemText primary={`Due date: `} />
+                    <CardActions>
+                      <Button size="medium" className={classes.buttonPos}>Pay this month</Button>
+                    </CardActions>
+                    <Divider orientation="horizontal" className={classes.dividerHor} flexItem />
                   </ListItem>
                 ))}
               </ul>

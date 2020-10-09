@@ -12,15 +12,15 @@ export const useStyles = makeStyles((theme) => ({
     gridArea: "1 / 2 / 3 / 4"
   },
   list: {
-    width: "22vw",
+    width: "100%",
     height: "98%",
   },
   listSection: {
     backgroundColor: 'inherit',
+    display: "flex",
   },
   ul: {
     backgroundColor: 'inherit',
-    padding: 0,
   },
   title: {
     marginTop: "-20px",
@@ -29,21 +29,9 @@ export const useStyles = makeStyles((theme) => ({
   pos: {
     marginBottom: "0",
   },
-  dividerVert: {
-    marginTop: "2px",
-    height: "30px",
-    background: "rgba(0, 0, 0, .3)",
-  },
-  dividerHor: {
-    marginTop: "0",
-    marginBottom: "10px",
-    width: "420px",
-    height: "1px",
-    background: "rgba(0, 0, 0, .3)",
-  },
   buttonPos: {
-    marginLeft: "0",
-    marginTop: "-15px",
+    marginLeft: "-10px",
+    marginTop: "-5px",
     color: "#E74C3C",
   },
   moneyBalance: {
@@ -60,5 +48,21 @@ export const useStyles = makeStyles((theme) => ({
   },
   span: {
     color: "#E74C3C"
+  },
+  listItem: {
+    width: "45vw",
+    height: "200px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    fontSize: "16px",
+  },
+  dividerHor: {
+    marginTop: "0",
+    marginBottom: "10px",
+    width: "820px",
+    height: "1px",
+    background: "rgba(0, 0, 0, .3)",
   },
 }));
