@@ -22,7 +22,7 @@ export const Home = () => {
     }
   });
 
-  if(loading === true) {
+  if(loading === true || !userData) {
     return (
       <LoadingWrapper><CircularProgress /></LoadingWrapper>
     );
@@ -40,9 +40,9 @@ export const Home = () => {
                 <PageUserIcons />
               </Box>
               <Box className={classes.box}>
-                <BalanceCard title="Provi Balance" balance="{userData.amountTaken}" status="Available" actionTitle1="Add Money" actionTitle2="Withdraw Money" />
-                <TaxesCard amountPaid="{userData.amountPayd}" monthlyInterest="{userData.monthlyInterest}" totalAmmount="{userData.totalAmountInTaxes}" />
-                <InstallmentsCard />
+                <BalanceCard title="Provi Balance" balance={userData.amountTaken} status="Available" actionTitle1="Add Money" actionTitle2="Withdraw Money" />
+                <TaxesCard amountPaid={userData.amountPayd} monthlyInterest={userData.monthlyInterest} totalAmmount={userData.totalAmountInTaxes} />
+                <InstallmentsCard installments={userData.installments}/>
               </Box>
             </CustomizedCard>
           </CustomizedGrid>
