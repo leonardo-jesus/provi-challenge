@@ -12,7 +12,7 @@ export const ImgCustom = styled.img.attrs({
 
 export const AppBarCustom = styled(AppBar)`
   position: relative;
-  background: red;
+  background: #f5f5f5;
   height: 65px;
   border: 0;
   box-shadow: none;
