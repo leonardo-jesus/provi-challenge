@@ -1,4 +1,4 @@
-import React, { createContext, FC, useState } from 'react';
+import React, { createContext, FC, useState, useContext } from 'react';
 import { getUserData } from '../../api';
 
 export const UserContext = createContext<any>({});
@@ -8,13 +8,15 @@ type MyProps = {
 }
 
 export const UserProvider: React.FC<MyProps> = ({ children }) => {
-  const [username, setUsername] = useState('Leonardo');
+  const [userData, setUserData] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
 
-  const changeNameByAPI = async () => {
-    setUsername('Loading...');
-    const name = await getUserData();
-    setUsername(name);
+  const getUserInfo = async () => {
+    setLoading(true);
+    const info = await getUserData();
+    setUserData(info);
+    setLoading(false);
   };
 
-  return <UserContext.Provider value={{ username, changeNameByAPI }}>{children}</UserContext.Provider>;
+  return <UserContext.Provider value={{ loading, userData, getUserInfo }}>{children}</UserContext.Provider>;
 };
