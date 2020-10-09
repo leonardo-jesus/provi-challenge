@@ -21,3 +21,11 @@ export const CustomizedCard = styled.div`
   height: calc(100vh - 100px);
   border-radius: 2px;
 `;
+
+export const LoadingWrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`; 
