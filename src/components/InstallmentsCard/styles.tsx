@@ -4,6 +4,7 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "95.8%",
     maxHeight: "53.7%",
+    overflow: "auto",
     marginTop: "20px",
     boxShadow: "none",
     borderRadius: 0,
