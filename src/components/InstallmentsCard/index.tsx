@@ -16,7 +16,7 @@ export const InstallmentsCard = () => {
                   <ListItem className={classes.listItem} key={`item-${sectionId}-${item}`}>
                     {/* <ListItemText primary={`Item ${item}`} /> */}
                     <ListItemText primary={`Value: `} />
-                    <ListItemText primary={`Payd: `} />
+                    <ListItemText primary={`Paid: `} />
                     <ListItemText primary={`Due date: `} />
                     <CardActions>
                       <Button size="medium" className={classes.buttonPos}>Pay this month</Button>

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 export const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "95.8%",
-    maxHeight: "54.64%",
+    maxHeight: "53.60%",
     overflow: "auto",
     marginTop: "20px",
     boxShadow: "none",
