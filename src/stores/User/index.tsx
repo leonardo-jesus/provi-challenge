@@ -1,4 +1,4 @@
-import React, { createContext, FC, useState, useContext } from 'react';
+import React, { createContext, FC, useState } from 'react';
 import { getUserData } from '../../api';
 
 export const UserContext = createContext<any>({});
