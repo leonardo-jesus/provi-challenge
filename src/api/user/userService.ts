@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ROOT_URL = 'http://www.mocky.io';
+const ROOT_URL = 'https://www.mocky.io';
 
 const api = axios.create({
   baseURL: ROOT_URL,
